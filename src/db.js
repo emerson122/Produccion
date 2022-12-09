@@ -8,11 +8,11 @@ require('dotenv').config();
 
 
 const conexion = mysql.createConnection({
-    host: process.env.SERVER,
-    user: process.env.USER,
-    password: process.env.PASS ,
-    database: process.env.DB,
-    port: process.env.DBPORT,
+    host: process.env.SERVERHOST,
+    user: process.env.USERMYSQL,
+    password: process.env.PASSMYSQL ,
+    database: process.env.DBMYSQL,
+    port: process.env.DBPORTMYSQL,
     multipleStatements: true,
 });
 
